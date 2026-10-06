@@ -2,6 +2,8 @@
 
 A dead-simple menu bar icon hider for macOS. Like Hidden Bar, minus everything extra.
 
+> **⚠️ Doesn't work on macOS 27 (Golden Gate).** Apple changed how the menu bar is drawn in macOS 27, and the trick SimpleBar uses (the same one Hidden Bar and Ice use) no longer hides anything. The arrow still flips, but your icons stay put. On macOS 27, try [Thaw](https://github.com/stonerl/Thaw) instead. SimpleBar works on macOS 13 through 26.
+
 - **`|`** is the divider. Every icon to its **left** gets hidden.
 - **`‹` / `›`** is the button. `‹` means icons are hidden (click to show them). `›` means they're showing (click to hide them).
 
@@ -13,7 +15,7 @@ A dead-simple menu bar icon hider for macOS. Like Hidden Bar, minus everything e
    - go to **System Settings → Privacy & Security**, scroll down, and click **Open Anyway**, or
    - run this in Terminal: `xattr -cr /Applications/SimpleBar.app`
 
-Requires macOS 13 (Ventura) or newer. Works on Apple Silicon and Intel.
+Works on macOS 13 (Ventura) through macOS 26 (Tahoe), on Apple Silicon and Intel. **Not macOS 27**, see above.
 
 ## Use
 
