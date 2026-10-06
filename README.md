@@ -1,3 +1,5 @@
+<img src="Icon/AppIcon.png" width="128" alt="SimpleBar icon">
+
 # SimpleBar
 
 A dead-simple menu bar icon hider for macOS. Like Hidden Bar, minus everything extra.
